@@ -28,4 +28,4 @@ Saylent Api Key:
 ```
 
 #### Screen Details:
-
+![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
