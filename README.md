@@ -1,8 +1,8 @@
 # WeatherApp
-Node JS app which shows the weather condition of 10 US cities.
+Node JS/Angular/React app which shows the weather condition for 10 US cities.
 
 ## Problem:
-Use wunderground weather api to fetch the current temprature of following cities:
+Use wunderground weather api to fetch the temperature for following cities:
 
 * Austin, TX
 * Denver, CO
@@ -15,11 +15,11 @@ Use wunderground weather api to fetch the current temprature of following cities
 * Des Moines, IA
 * Salt Lake City, UT
 
-Show the temprature in both Fahrenheit and Celius units. 
-Sort the cities in the descending order based on the tempratures. 
+Show the temperature in both `Fahrenheit` and `Celius` units. 
+Sort the cities in the descending order based on their temperatures. 
 
 #### Api Details:
-Api documentation:
+Api details can be found here:
 https://www.wunderground.com/weather/api/d/docs
 
 Saylent Api Key:
@@ -28,4 +28,10 @@ Saylent Api Key:
 ```
 
 #### Screen Details:
+Use the following screen layout to display the result:
+
 ![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
+
+#### Notes:
+* Feel free to use any third party library
+* Please submit a deployable app with setup instructions.
