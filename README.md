@@ -1,6 +1,11 @@
 # WeatherApp
 Node JS/Angular/React app which shows the weather condition for 10 US cities.
 
+### Notes:
+* Feel free to use any third party library
+* Submit deployable app with detailed setup instructions. 
+* Take your time to complete the exercise. It is the only way for us to know how you code.
+
 ## Problem:
 Use wunderground weather api to fetch the temperature for following cities:
 
@@ -32,7 +37,3 @@ Use the following screen layout to display the result:
 
 ![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
 
-### Notes:
-* Feel free to use any third party library
-* Submit deployable app with detailed setup instructions. 
-* Take your time to complete the exercise. It is the only way for us to know how you code.
