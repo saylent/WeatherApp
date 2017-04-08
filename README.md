@@ -29,7 +29,7 @@ https://www.wunderground.com/weather/api/d/docs
 
 Saylent Api Key:
 ```
-2108bc8531a7e775
+6135f78e52c9e3ca
 ```
 
 ### Screen Details:
