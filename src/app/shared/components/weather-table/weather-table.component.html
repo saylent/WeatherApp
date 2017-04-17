@@ -1,0 +1,15 @@
+<div [fxLayout]="flexboxDirections.column" fxLayoutAlign="start stretch" mdl-shadow="2" class="weather-table-container">
+    <div class="table-header" [fxLayout]="flexboxDirections.row" fxLayoutAlign="start start">
+        <div fxFlex="60">City</div>
+        <div fxFlex>Weather in C</div>
+        <div fxFlex>Weather in F</div>
+    </div>
+    <div class="table-body" [fxLayout]="flexboxDirections.column" fxLayoutAlign="start stretch">
+        <div [fxLayout]="flexboxDirections.row" fxLayoutAlign="start start" *ngFor="let city of cities" class="table-row">
+            
+            <div fxFlex="60">{{city?.display_location.city}}, {{city?.display_location.state}}</div>
+            <div fxFlex [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">{{city?.temp_c}}<span>C</span></div>
+            <div fxFlex [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">{{city?.temp_f}}<span>F</span></div>
+        </div>
+    </div>
+</div>

@@ -1,39 +1,24 @@
-# WeatherApp
-Node JS/Angular/React app which shows the weather condition for 10 US cities.
+# Weather Channel
 
-### Notes:
-* Feel free to use any third party library
-* Submit deployable app with detailed setup instructions. 
-* Take your time to complete the exercise. It is the only way for us to know how you code.
+Setting up project
 
-## Problem:
-Use wunderground weather api to fetch the temperature for following cities:
+#Prerequisites
 
-* Austin, TX
-* Denver, CO
-* San Jose, CA
-* Washington, DC
-* Fayetteville, AR
-* Seattle, WA
-* Raleigh, NC
-* Boston, MA
-* Des Moines, IA
-* Salt Lake City, UT
+Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.
 
-Show the temperature in both `Fahrenheit` and `Celius` units. 
-Sort the cities in the descending order based on their temperatures. 
+#Installation
+1. Make sure you have npm installed. (https://nodejs.org/en/download/)
+2. Install Angular CLI globally `npm install -g @angular/cli`
+3. git clone this repository `git clone link to repository`. cd into folder 'cd path_to_base_of_this_folder'
+4. Run `npm install` to install node modules required by this project.
+5. Install bower `npm install bower -g`
+6. Run bower install  to install bower components needed by this project.
+--PROJECT SETUP SUCCESSFUL---
+7. Rename `angular-cli.json` to `.angular-cli.json` (only use if the .angular-cli.json was not cloned)
+8. Within project folder run `ng serve` or `npm start` to start local built in server
+9. Navigate to localhost:4200/. If you see an app framework, it worked. 
 
-### Api Details:
-Api details can be found here:
-https://www.wunderground.com/weather/api/d/docs
 
-Saylent Api Key:
-```
-6135f78e52c9e3ca
-```
-
-### Screen Details:
-Use the following screen layout to display the result:
-
-![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

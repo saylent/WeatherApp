@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+.demo-sidenav-container {
+    border: 1px solid #eee;
+    background-color: $very-light-gray;
+    .mat-sidenav-focus-trap > .cdk-focus-trap-content {
+        padding: 10px;
+    }
+    .right-side-nav {
+        width: 300px;
+    }
+}
+
+.demo-sidenav-content {
+    padding: 15px;
+}

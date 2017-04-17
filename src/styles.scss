@@ -1,0 +1,169 @@
+/* You can add global styles to this file, and also import other style files */
+
+////////////////////////////////////////////////////////////////////
+//Angular Material Theme Configuration
+////////////////////////////////////////////////////////////////////
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import "~angular2-mdl/scss/color-definitions";
+@import '~angular2-mdl/scss/material-design-lite';
+@import '~@angular/material/core/theming/all-theme';
+$color-primary: $palette-indigo-500;
+$color-primary-dark: $palette-indigo-700;
+$color-accent: $palette-pink-A200;
+$color-primary-contrast: $color-dark-contrast;
+$color-accent-contrast: $color-dark-contrast;
+// Plus imports for other components in your app.
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent: mat-palette($mat-pink, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$candy-app-warn: mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($candy-app-theme);
+///////////////////////////////////////////////////////////////////
+//Mixin space
+//////////////////////////////////////////////////////////////////
+//Create default fonts
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin robotocondensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+//Clear layouts after using floats
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}
+
+
+
+@mixin display-flex($direction) {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flex-fill-space() {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+@mixin display-block-full-width() {
+    display:block;
+    width: 100%;
+}
+
+@mixin background-no-repeat-center() {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+///////////////////////////////////////////////////////////////////
+//Define SASS Variables space
+//////////////////////////////////////////////////////////////////
+
+//Colors
+$white: #fff;
+$white-80: rgba(255, 255, 255, 0.8);
+$very-light-gray: #f4f4f4;
+$light-gray: #dadada;
+$medium-gray: #999;
+$black: #000;
+$black-80: rgba(0, 0, 0, 0.8);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-40: rgba(0, 0, 0, 0.4);
+$accent-color: #E91E63;
+$accent-color-dark: #C2185B;
+$accent-color-light: #F8BBD0;
+$primary-color: #3F51B5;
+$primary-color-dark: #303F9F;
+$primary-color-light: #C5CAE9;
+
+
+//Widths
+$max-app-width: 1200px;
+
+
+//Font-variations
+$font-small-header: 16px;
+
+//Box Model Properties
+$default-padding: 15px;
+$padding-24: 24px;
+$default-margin: 15px;
+$margin-24:24px;
+
+
+///////////////////////////////////////////////////////////////////
+//Start Styling
+//////////////////////////////////////////////////////////////////
+html {
+    height: 100%;
+}
+
+body {
+    @include robotocondensed();
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: $very-light-gray;
+}
+
+.full-width-height-column {
+    @include display-flex(column);
+    @include flex-fill-space();
+}
+
+.full-width-height-row {
+    @include display-flex(row);
+    @include flex-fill-space();
+}
+
+
+.mat-toolbar.small-toolbar {
+        min-height: 0;
+        font-size: $font-small-header;
+        .mat-toolbar-row {
+            height: auto;
+            padding: 12px 10px
+        }
+}
+
+.container-fluid {
+    max-width: $max-app-width;
+    width: 100%;
+}

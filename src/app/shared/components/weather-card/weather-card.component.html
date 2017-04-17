@@ -1,0 +1,34 @@
+<md-card [fxLayout]="flexboxDirections.column" fxLayoutAlign="start stretch">
+    <md-card-title fxFlex="nogrow" [fxLayout]="flexboxDirections.row" fxLayoutAlign="start start">
+    	<div fxFlex [fxLayout]="flexboxDirections.column" fxLayoutAlign="end stretch">
+    		<div fxFlex class="city-title-container">{{city?.display_location?.city}}</div>
+    		<div fxFlex><md-card-subtitle fxFlex="nogrow">{{city?.display_location?.state}}</md-card-subtitle></div>
+    	</div>
+    	<div fxFlex [ngStyle]="{'background-image': 'url(' + city?.icon_url + ')'}" class="icon-container">
+    		
+    	</div>
+    </md-card-title>
+    <div fxFlex="nogrow" [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">
+    	<div fxFlex [fxLayout]="flexboxDirections.column" fxLayoutAlign="center center">
+    		<div fxFlex><strong>Wind</strong></div> 
+    		<div fxFlex>{{city?.wind_mph}}MPH</div>
+    	</div>
+    	<div fxFlex [fxLayout]="flexboxDirections.column" fxLayoutAlign="center center">
+    		<div fxFlex><strong>Humidity</strong> </div>
+    		<div fxFlex>{{city?.relative_humidity}}</div>
+    	</div>
+    	<div fxFlex [fxLayout]="flexboxDirections.column" fxLayoutAlign="center center">
+    		<div fxFlex><strong>Condition</strong></div> 
+    		<div fxFlex>{{city?.weather}}</div>
+    	</div>
+    </div>
+    <md-card-content fxFlex [fxLayout]="flexboxDirections.row" fxLayoutAlign="start center">
+
+    	<div fxFlex [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">
+        	<h1>{{city?.temp_c}}<span>C</span></h1>
+    	</div>
+    	<div fxFlex [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">
+        	<h1>{{city?.temp_f}}<span>F</span></h1>
+    	</div>
+    </md-card-content>
+</md-card>

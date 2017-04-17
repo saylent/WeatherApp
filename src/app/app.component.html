@@ -1,0 +1,18 @@
+<div class="demo-container" mdl-shadow="2">
+    <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+        <mdl-layout-header>
+            <mdl-layout-header-row>
+                <mdl-layout-spacer></mdl-layout-spacer>
+                <div mdl-cell-middle class="mdl-cell mdl-cell--4-col" 
+                    [fxLayout]="flexboxDirections.row" 
+                    fxLayoutAlign="center center">
+                    <h3>Weather App</h3>
+                </div>
+                <mdl-layout-spacer></mdl-layout-spacer>
+            </mdl-layout-header-row>
+        </mdl-layout-header>
+        <mdl-layout-content class="full-width-height-column">
+            <app-body class="full-width-height-row"></app-body>
+        </mdl-layout-content>
+    </mdl-layout>
+</div>

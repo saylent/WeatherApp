@@ -1,0 +1,25 @@
+@import '../../../../styles.scss';
+:host { 
+	@include display-block-full-width(); 
+	width:800px;
+	.weather-table-container {
+		padding: $padding-24;
+		background-color: $white;
+		.table-header {
+			font-size: 20px;
+			font-style: bold;
+			border-bottom: 2px solid $primary-color;
+			padding: 5px;
+		}
+
+		.table-row {
+			font-size: 16px;
+			border-bottom: 1px solid $light-gray;
+			padding: 5px;
+
+			&:hover {
+				background-color: $primary-color-light;
+			}
+		}
+	}
+}

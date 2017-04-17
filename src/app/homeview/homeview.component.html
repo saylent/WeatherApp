@@ -1,0 +1,24 @@
+<div [fxLayout]="flexboxDirections.row" fxLayoutAlign="center center">
+	<button md-raised-button color="accent" (click)="changeView('table')" 
+			*ngIf="renderMode === 'cards'">View As Table</button>
+	<button md-raised-button color="accent" (click)="changeView('cards')"
+		*ngIf="renderMode === 'table'">View As Cards</button>
+</div>	
+<div class="container-fluid" [fxLayout]="flexboxDirections.row" 
+	fxLayoutAlign="center start" fxLayoutWrap 
+	*ngIf="renderMode === 'cards'">
+    <app-weather-card *ngFor="let city of citiesToRender" [city]="city" 
+    				 fxFlex.xl="20" 
+    				 fxFlex.gt-sm="100" 
+    				 fxFlex.sm="100" 
+    				 fxFlex.gt-md="30" 
+    				 fxFlex.md="45" >
+    	
+    </app-weather-card>
+</div>
+<div class="container-fluid" 
+	*ngIf="renderMode === 'table'">
+    <app-weather-table [cities]="citiesToRender">
+    	
+    </app-weather-table>
+</div>

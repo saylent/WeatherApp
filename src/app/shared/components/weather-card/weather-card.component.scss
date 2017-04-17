@@ -1,0 +1,29 @@
+@import '../../../../styles.scss';
+:host {
+	margin-bottom: $margin-24;
+	margin-right: $margin-24;
+	width: 400px;
+	height: 250px;
+	.mat-card {
+		height: 100%;
+		.icon-container {
+	        background-size: 100px;
+	        background-position: center;
+	        @include background-no-repeat-center();
+	        width: 80px;
+	        height: 80px;
+		}
+		.city-title-container {
+			padding-bottom: 5px;
+		}
+	}
+	h1 {
+		color: $black-60;
+		span {
+			font-size: 20px;
+			color: $medium-gray;
+		}
+
+	}
+
+}
