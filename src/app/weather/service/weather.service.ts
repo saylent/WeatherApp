@@ -70,7 +70,7 @@ export class WeatherService {
     const city = place.city.replace(' ', '_');
     const state = place.state;
     let urlCity = this.getBaseUrl() + '/' + state + '/' + city + '.json';
-    urlCity = 'file.json';
+    //urlCity = 'file.json';
     console.log(urlCity);
     return this.http.get(urlCity).map(
       (response: Response) => {
