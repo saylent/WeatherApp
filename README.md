@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-Be sure to have the late node/npm version installed.
+Be sure to have the latest node/npm version installed in your terminal.
 
 ## How to Run Weather App 
 
