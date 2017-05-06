@@ -1,39 +1,28 @@
 # WeatherApp
-Node JS/Angular/React app which shows the weather condition for 10 US cities.
 
-### Notes:
-* Feel free to use any third party library
-* Submit deployable app with detailed setup instructions. 
-* Take your time to complete the exercise. It is the only way for us to know how you code.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Problem:
-Use wunderground weather api to fetch the temperature for following cities:
+## Development server
 
-* Austin, TX
-* Denver, CO
-* San Jose, CA
-* Washington, DC
-* Fayetteville, AR
-* Seattle, WA
-* Raleigh, NC
-* Boston, MA
-* Des Moines, IA
-* Salt Lake City, UT
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Show the temperature in both `Fahrenheit` and `Celius` units. 
-Sort the cities in the descending order based on their temperatures. 
+## Code scaffolding
 
-### Api Details:
-Api details can be found here:
-https://www.wunderground.com/weather/api/d/docs
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-Saylent Api Key:
-```
-6135f78e52c9e3ca
-```
+## Build
 
-### Screen Details:
-Use the following screen layout to display the result:
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
+## Running unit tests
 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
