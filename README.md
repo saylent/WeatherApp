@@ -1,6 +1,6 @@
 # Coding Exercise
 
-Node JS/Angular/React app which shows posts for a website.
+Create an application that shows posts for a website using an external API.
 
 ### Notes
 
