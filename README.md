@@ -1,24 +1,26 @@
-# WeatherApp
+# Coding Exercise
+
 Node JS/Angular/React app which shows posts for a website.
 
-### Notes:
+### Notes
 
 * Feel free to use any third party library
 * Submit deployable app with detailed setup instructions. 
 * Take your time to complete the exercise. It is the only way for us to know how you code.
 
-## Problem:
+## Problem
 
 Show 20 posts with their authors and a count of the associated comments given the `posts`, `users`, and `comments` end-points noted below. 
 
 - https://jsonplaceholder.typicode.com/
 
-### Screen Details:
+### Screen Details
 
 Use the following screen layout to display the result:
 
 | Poster | Title | Comments |
-|  Leanne Graham | sunt aut facere repellat provident occaecati excepturi optio reprehenderit | 5 |
+| ------ | ----- | -------- |
+| Leanne Graham | sunt aut facere repellat provident occaecati excepturi optio reprehenderit | 5 |
 | Leanne Graham | qui est esse | 5 |
 | Leanne Graham | ea molestias quasi exercitationem repellat qui ipsa sit aut | 5 |
 | Leanne Graham | eum et est occaecati | 5 |
