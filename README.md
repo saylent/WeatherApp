@@ -1,39 +1,42 @@
 # WeatherApp
-Node JS/Angular/React app which shows the weather condition for 10 US cities.
+Node JS/Angular/React app which shows posts for a website.
 
 ### Notes:
+
 * Feel free to use any third party library
 * Submit deployable app with detailed setup instructions. 
 * Take your time to complete the exercise. It is the only way for us to know how you code.
 
 ## Problem:
-Use wunderground weather api to fetch the temperature for following cities:
 
-* Austin, TX
-* Denver, CO
-* San Jose, CA
-* Washington, DC
-* Fayetteville, AR
-* Seattle, WA
-* Raleigh, NC
-* Boston, MA
-* Des Moines, IA
-* Salt Lake City, UT
+Show 20 posts with their authors and a count of the associated comments given the `posts`, `users`, and `comments` end-points noted below. 
 
-Show the temperature in both `Fahrenheit` and `Celius` units. 
-Sort the cities in the descending order based on their temperatures. 
-
-### Api Details:
-Api details can be found here:
-https://www.wunderground.com/weather/api/d/docs
-
-Saylent Api Key:
-```
-6135f78e52c9e3ca
-```
+- https://jsonplaceholder.typicode.com/
 
 ### Screen Details:
+
 Use the following screen layout to display the result:
 
-![App Screenshot](https://github.com/saylent/WeatherApp/blob/master/app-screen.png)
+| Poster | Title | Comments |
+|  Leanne Graham | sunt aut facere repellat provident occaecati excepturi optio reprehenderit | 5 |
+| Leanne Graham | qui est esse | 5 |
+| Leanne Graham | ea molestias quasi exercitationem repellat qui ipsa sit aut | 5 |
+| Leanne Graham | eum et est occaecati | 5 |
+| Leanne Graham | nesciunt quas odio | 5 |
+| Leanne Graham | dolorem eum magni eos aperiam quia | 5 |
+| Leanne Graham | magnam facilis autem | 5 |
+| Leanne Graham | dolorem dolore est ipsam | 5 |
+| Leanne Graham | nesciunt iure omnis dolorem tempora et accusantium | 5 |
+| Leanne Graham | optio molestias id quia eum | 5 |
+| Ervin Howell | et ea vero quia laudantium autem | 5 |
+| Ervin Howell | in quibusdam tempore odit est dolorem | 5 |
+| Ervin Howell | dolorum ut in voluptas mollitia et saepe quo animi | 5 |
+| Ervin Howell | voluptatem eligendi optio | 5 |
+| Ervin Howell | eveniet quod temporibus | 5 |
+| Ervin Howell | sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio | 5 |
+| Ervin Howell | fugit voluptas sed molestias voluptatem provident | 5 |
+| Ervin Howell | voluptate et itaque vero tempora molestiae | 5 |
+| Ervin Howell | adipisci placeat illum aut reiciendis qui | 5 |
+| Ervin Howell | doloribus ad provident suscipit at | 5 |
+
 
