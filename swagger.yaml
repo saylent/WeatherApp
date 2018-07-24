@@ -1,0 +1,87 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  description: Users, Posts, and Comments
+host: 'localhost:8080'
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+
+paths:
+  /users:
+    get:
+      responses:
+        '200':
+          description: Successful Operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+
+  /posts:
+    get:
+      responses:
+        '200':
+          description: Successful Operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Post'
+
+  /comments:
+    get:
+      responses:
+        '200':
+          description: Successful Operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Comment'
+
+definitions:
+  User:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      username:
+        type: string
+      email:
+        type: string
+      phone:
+        type: string
+      website:
+        type: string
+
+  Post:
+    type: object
+    properties:
+      id:
+        type: number
+      userId:
+        type: number
+      title:
+        type: string
+      body:
+        type: string
+
+  Comment:
+    type: object
+    properties:
+      id:
+        type: number
+      postId:
+        type: number
+      name:
+        type: string
+      email:
+        type: string
+      body:
+        type: string
