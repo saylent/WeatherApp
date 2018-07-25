@@ -1,18 +1,19 @@
 # Coding Exercise
 
-Create an application that shows posts for a website using an external API.
+Create an application that shows posts for a website using a custom API.
 
 ### Notes
 
 * Feel free to use any third party library
+* Data can be hard-coded in the application
 * Submit deployable app with detailed setup instructions. 
 * Take your time to complete the exercise. It is the only way for us to know how you code.
 
 ## Problem
 
-Show 20 posts with their authors and a count of the associated comments given the `posts`, `users`, and `comments` end-points noted below. 
+Create an API that conforms to the specification in `swagger.yaml` 
 
-- https://jsonplaceholder.typicode.com/
+Once that is done create a UI that shows 20 posts with their authors and a count of the associated comments given the `posts`, `users`, and `comments` end-points. 
 
 ### Screen Details
 
