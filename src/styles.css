@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+html, body, table, p {
+  font-family: Tahoma;
+  font-size: small;
+  background:#fff;
+}
+
+p.title {
+  background-color: maroon;
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+table {
+  border: 1px solid darkgray;
+  align-items:center;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: lightgrey;
+}
+td.column_name {
+  text-align: center;
+}
+th, td {
+  padding: 0.5em 10px;
+  text-align: left;
+  height: 25px;
+}
+table, td, th {
+  border: 1px solid darkgray;
+}
